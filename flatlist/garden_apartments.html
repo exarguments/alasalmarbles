@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raojee|About</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style_new.css">
+  <link rel="icon" href="img/logo.jpg">
+
+  <style media="screen">
+    #Apartments {
+      height: auto;
+    }
+
+    .apartment {
+      background-image: url(../img/Ter_Garden_1BHK.jpg);
+      background-position: left;
+      background-size: 160%;
+    }
+
+    .apartment:nth-child(2) {
+      background-image: url(../img/Ter_Garden_2BHK.jpg);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="brand">
+    <h6 class="bold">RERA NO</h6>
+    <h6>P52100007018</h6>
+  </div>
+
+  <span id="menubtn" onclick=""><i class="material-icons">menu</i></span>
+  <div id="gridlines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div id="menu" class="col-md-3 col-sm-12 col-lg-4 shadow">
+
+  </div>
+
+
+  <div id="Apartments" class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 apartment">
+        <img src="../img/Ter_Garden_1BHK.jpg" class="img-responsive" alt="" style="visibility:hidden;height:80vh">
+      </div>
+      <div class="col-md-5">
+        <div class="hidden-xs">
+          <br><br><br><br>
+        </div>
+        <br>
+        <h3 class="bold">Garden Apartments</h3>
+        <h4 class="bold">1bhk</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <a href="#" class="raojeebtn">View Gallery</a>
+        <a href="#" class="raojeebtn" data-toggle="modal" data-target="#myModal">View Availabelity</a>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <div class="hidden-xs">
+          <br><br><br><br>
+        </div>
+        <br>
+        <h3 class="bold">Garden Apartments</h3>
+        <h4 class="bold">2bhk</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <a href="#" class="raojeebtn">View Gallery</a>
+        <a href="#" class="raojeebtn" data-toggle="modal" data-target="#myModal">View Availabelity</a>
+        <br><br>
+      </div>
+      <div class="col-md-6 apartment">
+        <img src="../img/Ter_Garden_2BHK.jpg" class="img-responsive" alt="" style="visibility:hidden;height:80vh">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title bold">Can I get your number?</h4>
+        </div>
+        <div class="modal-body">
+          <!-- action="/action_page.php"  -->
+          <form name="enqryForm" action="" onsubmit="" method="post">
+            <input type="text" name="enqryName" value="" class="form-control" placeholder="Name">
+            <input type="text" name="enqryMail" value="" class="form-control" placeholder="Email">
+            <input type="number" name="enqryPhone" value="" class="form-control" placeholder="Phone">
+            <button type="button" onclick="enqrySubmit()" name="button" class="form-control">OK</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer" class="container-fluid blue-grey darken-4">
+    <div class="col-md-6 col-md-offset-3 overlay-sib text-center">
+      <img src="../img/raojee-title.png" class="img-responsive" alt="">
+      <br>
+      <p class="white-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br>
+      <h5 class="gold-text">+9156565656</h5>
+      <h5 class="gold-text">hello@raojee.com</h5>
+      <br>
+      <a href="#" class="gold-text">Download Brochure</a>
+      <br><br>
+      <i class="fa fa-facebook-official fa-3x gold-text" aria-hidden="true"></i>
+      <br><br>
+    </div>
+    <div class="col-sm-12 col-md-12 text-center overlay-sib"> <a href="#" class="gold-text">Developers</a> </div>
+  </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/menu.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    function enqrySubmit() {
+
+      var x = document.forms["enqryForm"]["enqryName"].value;
+      var y = document.forms["enqryForm"]["enqryMail"].value;
+      var z = document.forms["enqryForm"]["enqryPhone"].value;
+      if (x == "" || y == "" || z == "") {
+        alert("All fields must be filled out");
+        return false;
+      } else {
+        window.location = '../index.html';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

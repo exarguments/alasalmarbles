@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="parallax.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <img id="brand" src="img/logo.jpg" alt="">
+
+  <!-- <div id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div> -->
+
+  <div class="overlay-box">
+    <span id="menubtn" href="#" onclick="openNav()"><i class="material-icons">menu</i></span>
+    <span id="login" href="#" onclick=""><i class="material-icons">person_outline</i></span>
+
+    <div id="myNav" class="overlay-menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-menu-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div id="container">
+
+    <div class='heroEffects'>
+      <div class="bg">
+
+        <div class="title centerV">
+          <div>
+            <div class="text monster">
+              <h1>Life is an opera</h1>
+              <h3>Home is the stage</h3>
+              <!-- <h3>Raojee brings you the concert</h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shade"></div>
+    </div>
+
+    <div class="content">
+
+      <div id="about" class="row container border-right">
+
+        <div class="col m8 offset-m2">
+          <h1 class="title black-text right-align">“A happy family is but an earlier heaven.”  <br> <i style="font-size:2rem"> —George Bernard Shaw</i></h1>
+          <!-- <p>Since inception, we have successfully completed a varied range of construction projects with a vision to conceive, design and build, in response to an existing set of conditions; a functional development aware of the artistic, social, political
+            and cultural context of site. Our focus has always been on the quality of projects we build and our aim is to exceed client expectations every time. The amount of repeat client and referrals we receive proves that our focus on quality works
+            for everyone. We strive relentlessly with an aim to achieve excellence in business that we venture into, with the objective of becoming an organization that all its employees, associates and clients are proud of. With a long way to go, we
+            have many more milestones to establish in cognizance with our vision.
+          </p> -->
+        </div>
+
+      </div>
+
+      <div id="project" class="container">
+        <h1 class="title">Our Projects</h1>
+
+        <div class="row">
+          <div class="col m1"></div>
+          <div class="col m4 project-info">
+            <h3 class="">Bavdhan</h3>
+            <p>Commercial: 12,000 + sqft.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, itaque asperiores perferendis voluptates iusto recusandae. </p>
+          </div>
+          <div class="col m4 project-img imgexplr hideme"></div>
+        </div>
+
+        <div class="row">
+          <div class="col m2"></div>
+          <div class="col m4 project-info">
+            <h3 class="">Balewadi</h3>
+            <p>Residential: 3,50,000 + sqft.</p>
+            <p>Commercial: 3,000 + sqft.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, itaque asperiores perferendis voluptates iusto recusandae. </p>
+          </div>
+          <div class="col m4 project-img imgexplr hideme"></div>
+        </div>
+
+        <div class="row">
+          <div class="col m1"></div>
+          <div class="col m4 project-info">
+            <h3 class="">Dhanori</h3>
+            <p>Residential: 14,00,000 + sqft.</p>
+            <p>Commercial: 25,000 + sqft.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, itaque asperiores perferendis voluptates iusto recusandae. </p>
+          </div>
+          <div class="col m4 project-img imgexplr hideme"></div>
+        </div>
+
+      </div>
+
+
+      <div id="sneakpeak" class="row">
+
+        <div class="overlay-title">
+          <h1>Raojee</h1>
+        </div>
+
+        <div class="col m10 offset-m1 overlay-sib">
+          <h1 class="title white-text">Take a Look</h1>
+          <div class="col m3 s6 l3 hideme">
+            <img src="img/Mbed03.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="col m3 s6 l3">
+            <img src="img/Kitchen.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="col m3 s6 l3">
+            <img src="img/G_bedroom02.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="col m3 s6 l3">
+            <img src="img/Ter_Gardern_1BHK.jpg" alt="" class="responsive-img">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="contact" class="row">
+
+        <form class="col s10 offset-s1 m8 offset-m2">
+          <h1 class="title">Write to Raojee!</h1>
+
+          <div class="row">
+            <div class="input-field col s8">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix"> Name</label>
+            </div>
+
+            <div class="input-field col s8">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+
+            <div class="input-field col s8">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate">
+              <label for="email" data-error="wrong" data-success="right">Email</label>
+            </div>
+
+            <div class="input-field col s8">
+              <i class="material-icons prefix">message</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="icon_telephone">Message</label>
+            </div>
+          </div>
+          <div class="col s8">
+            <button class="btn waves-effect waves-light right" style="background-color:rgba(210, 172, 103, 1)" type="submit" name="action">Send
+                <i class="material-icons right">send</i>
+              </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div id="footer" class="row center-align blue-grey darken-4">
+      <div class="overlay-title">
+        <h1>dream</h1>
+      </div>
+      <div class="overlay-title">
+        <h1>home</h1>
+      </div>
+
+      <div class="col m4 offset-m4 s10 offset-s2 overlay-sib">
+        <img src="img/raojee-title.png" class="responsive-img" alt="">
+        <p class="white-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h5 class="gold-text">+9156565656</h5>
+        <h5 class="gold-text">hello@raojee.com</h5>
+        <br>
+        <a href="#" class="gold-text">Download Brochure</a>
+        <br><br>
+        <i class="fa fa-facebook-official fa-3x white-text text-darken-4" aria-hidden="true"></i>
+        <br><br>
+      </div>
+      <div class="col m12 s12 l12 overlay-sib"> <a href="#" class="gold-text">Developers</a> </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/materialize.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    (function() {
+      $(window).scroll(function() {
+        var Num = $(window).scrollTop() / 500;
+        var Num2 = $(window).scrollTop() * .0004; // higher number for more zoom
+        var Num2mod = Num2 + 1;
+        var Num3 = $(window).scrollTop() * .2; // how fast does the Title move
+        var Num3mod = Num3 + 1;
+        return $('.shade').css('opacity', Num),
+          $(".bg").css({
+            "transform": "scale(" + Num2mod + ")"
+          }),
+          $(".text").css({
+            "margin-top": "-" + Num3mod + "px"
+          }),
+          $("#brand").css({
+            "margin-left": "-" + Num3mod * 8 + "px"
+          });
+      });
+    }.call(this));
+
+    $('#menubtnn').click(function() {
+      $('#menu').toggle('slow');
+      $('#menubtn i').html($('#menubtn').text() == 'menu' ? 'close' : 'menu');
+    });
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "40%";
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+  <script type="text/javascript">
+    $(function() { // $(document).ready shorthand
+      $('.monster').fadeIn('slow');
+    });
+
+    $(document).ready(function() {
+
+      /* Every time the window is scrolled ... */
+      $(window).scroll(function() {
+
+        /* Check the location of each desired element */
+        $('.hideme').each(function(i) {
+
+          var bottom_of_object = $(this).position().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+          /* If the object is completely visible in the window, fade it it */
+          if (bottom_of_window > bottom_of_object) {
+
+            $(this).animate({
+              'opacity': '1'
+            }, 1500);
+
+          }
+
+        });
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>

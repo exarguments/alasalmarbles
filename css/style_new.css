@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*title*/
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+/*title2*/
+
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+/*header*/
+
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+
+/**/
+
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
+/*about us para*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    /*border-bottom: 1px solid #26a69a;
+            box-shadow: 0 1px 0 0 #26a69a*/
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000
+}
+
+input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime].valid, input[type=datetime]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 200!important;
+}
+
+a {
+    text-decoration: none!important;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 5rem;
+    font-weight: 700!important;
+    font-family: 'Lato', sans-serif;
+}
+
+.amal-header h4, .amal-header h1 {
+    line-height: 0px!important;
+}
+
+.amal-header h1 {
+    font-weight: 900;
+}
+
+.amal-header h4 {
+    font-size: 2.5rem;
+    font-weight: 700!important;
+    font-family: 'Lato', sans-serif;
+    margin-left: -10px
+}
+
+#home {
+    background-color: white;
+    height: auto;
+    /*width: 100%;*/
+    overflow: hidden;
+    /*border: 20px solid black*/
+    /*background-image: url(https://images.pexels.com/photos/163822/color-umbrella-red-yellow-163822.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);*/
+    /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);*/
+}
+
+.amalsuttitle {
+    -webkit-transform: rotate(271deg);
+    -moz-transform: rotate(271deg);
+    -o-transform: rotate(271deg);
+    writing-mode: lr-tb;
+    top: 450px;
+    position: relative;
+    font-size: 7.6vw;
+    letter-spacing: 1vw;
+    font-weight: 900!important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.amal {
+    font-size: 7.6vw;
+    letter-spacing: 8.8vw;
+    font-weight: 900!important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.amal-2 {
+    font-size: 2.4vh;
+    font-weight: 700!important;
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    word-spacing: 1.8vw;
+    text-align: center;
+}
+
+.w1 {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+p.red {
+    font-weight: bold;
+}
+
+a {
+    color: #E42149;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 5px;
+    margin: -7px -5px;
+    transition: .3s;
+}
+
+a:hover {
+    background-color: #FFF146;
+}
+
+#home, #about, #service2,#clients,#project {
+    height: 100vh
+}
+
+#about p {
+    font-family: 'Arapey', serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 7vh
+}
+
+.fullcards {
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    overflow: hidden!important;
+    /*padding-top: 10%!important;*/
+    text-align: right;
+    transition: all 1s ease-in-out;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#service2 ol {
+    font-family: 'BioRhyme', serif;
+}
+
+#service h5 {
+    color: black!important;
+    font-weight: 900!important;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 12px;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .fullcards {
+        height: 33vh
+    }
+    .amalsuttitle {
+        font-size: 6.9em;
+        margin-top: 0
+    }
+}
+
+#service div:nth-child(1) {
+    background: url(https://images.pexels.com/photos/34639/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:nth-child(2) {
+    /*background: /* top, transparent red, faked with gradient */
+    /*linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/317140/pexels-photo-317140.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);*/
+    background: url(https://images.pexels.com/photos/317140/pexels-photo-317140.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:nth-child(3) {
+    background: url(https://images.pexels.com/photos/35177/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:nth-child(4) {
+    background: url(https://images.pexels.com/photos/259714/pexels-photo-259714.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:nth-child(5) {
+    background: url(https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:nth-child(6) {
+    background: url(https://images.pexels.com/photos/6469/red-hands-woman-creative.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#service div:hover {
+    background-position: right;
+    -webkit-filter: grayscale(0);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+
+#service div:hover:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#project div {
+    height: 40vh;
+    width: 40vh;
+}
+
+#project div:nth-child(1) {
+    background-image: url(https://images.pexels.com/photos/38981/pexels-photo-38981.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#project div:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/166277/pexels-photo-166277.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+#project div:nth-child(3) {
+    background-image: url(https://images.pexels.com/photos/160462/charcoal-drawing-charcoal-pencil-portrait-profile-160462.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+
+footer .fa {
+    margin: 1.2vh;
+    transition: all 0.3s ease;
+}
+
+footer .fa:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raojee|About</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style_new.css">
+  <link rel="icon" href="img/logo.jpg">
+  <style media="screen">
+    #main {
+      padding-top: 6.4%
+    }
+
+
+    .rwd-table {
+      margin: 1em 0;
+      min-width: 300px;
+    }
+
+    .rwd-table tr {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .rwd-table th {
+      display: none;
+    }
+
+    .rwd-table td {
+      display: block;
+    }
+
+    .rwd-table td:first-child {
+      padding-top: .5em;
+    }
+
+    .rwd-table td:last-child {
+      padding-bottom: .5em;
+    }
+
+    .rwd-table td:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 6.5em;
+      display: inline-block;
+    }
+
+    @media (min-width: 480px) {
+      .rwd-table td:before {
+        display: none;
+      }
+    }
+
+    .rwd-table th,
+    .rwd-table td {
+      text-align: center;
+    }
+
+    @media (min-width: 480px) {
+      .rwd-table th,
+      .rwd-table td {
+        display: table-cell;
+        padding: .25em .5em;
+      }
+      .rwd-table th:first-child,
+      .rwd-table td:first-child {
+        padding-left: 0;
+      }
+      .rwd-table th:last-child,
+      .rwd-table td:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .rwd-table {
+      color: #000022;
+      border-radius: .4em;
+      overflow: hidden;
+    }
+
+    .rwd-table tr {
+      border-color: #46637f;
+    }
+
+    .rwd-table th {
+      margin: .5em 1em;
+      /* background: #000022; */
+    }
+
+    @media (min-width: 480px) {
+      .rwd-table th,
+      .rwd-table td {
+        padding: 1em !important;
+      }
+    }
+
+    .rwd-table th,
+    .rwd-table td:before {
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="brand">
+    <h6 class="bold">RERA NO</h6>
+    <h6>P52100007018</h6>
+  </div>
+
+  <span id="menubtn" onclick=""><i class="material-icons">menu</i></span>
+  <span id="logo" onclick=""><img src="img/rlogo.jpg" alt="" class="img-responsive"></span>
+  
+  <div id="gridlines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div id="menu" class="col-md-3 col-sm-12 col-lg-4">
+    <script src="js/menu.js" charset="utf-8"></script>
+  </div>
+
+  <div id="main" class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-4">
+        <br><br><br>
+        <ul>
+          <li><input type="checkbox" name="Available" value=""><label for="Available">Available</label> </li>
+          <li><input type="checkbox" name="Garden" value=""><label for="Garden">Garden</label></li>
+          <li><input type="checkbox" name="Terrace" value=""><label for="Terrace">Terrace</label></li>
+        </ul>
+      </div> -->
+      <div class="col-md-8 col-md-offset-2 col-sm-12" style="overflow:hidden">
+
+        <table class="rwd-table">
+          <tr>
+            <th>UNIT No</th>
+            <th>BUILDING</th>
+            <th>FLOOR</th>
+            <th>CARPET AREA</th>
+            <th>SEAT OUT</th>
+            <th>AVAILABILITY</th>
+            <th>VIEW</th>
+          </tr>
+          <tr>
+            <td data-th="UNIT">R101</td>
+            <td data-th="BUILDING">North</td>
+            <td data-th="FLOOR">01</td>
+            <td data-th="CARPET AREA">500</td>
+            <td data-th="SEAT OUT">Yes</td>
+            <td data-th="AVAILABILITY">Available</td>
+            <td data-th="VIEW"><i class="fa fa-image"></i></td>
+          </tr>
+          <tr>
+            <td data-th="UNIT">R101</td>
+            <td data-th="BUILDING">South</td>
+            <td data-th="FLOOR">02</td>
+            <td data-th="CARPET AREA">500</td>
+            <td data-th="SEAT OUT">Yes</td>
+            <td data-th="AVAILABILITY">Blocked</td>
+            <td data-th="VIEW"><i class="fa fa-image"></i></td>
+          </tr>
+          <tr>
+            <td data-th="UNIT">R101</td>
+            <td data-th="BUILDING">North</td>
+            <td data-th="FLOOR">03</td>
+            <td data-th="CARPET AREA">500</td>
+            <td data-th="SEAT OUT">No</td>
+            <td data-th="AVAILABILITY">Booked</td>
+            <td data-th="VIEW"><i class="fa fa-image"></i></td>
+          </tr>
+        </table>
+
+
+      </div>
+
+    </div>
+    <br><br><br>
+  </div>
+
+  <div id="footer" class="container-fluid blue-grey darken-4">
+    <div class="col-md-6 col-md-offset-3 overlay-sib text-center">
+      <img src="img/raojee-title.png" class="img-responsive" alt="">
+      <br>
+      <p class="white-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br>
+      <h5 class="gold-text">+9156565656</h5>
+      <h5 class="gold-text">hello@raojee.com</h5>
+      <br>
+      <a href="#" class="gold-text">Download Brochure</a>
+      <br><br>
+      <i class="fa fa-facebook-official fa-3x gold-text" aria-hidden="true"></i>
+      <br><br>
+    </div>
+    <div class="col-sm-12 col-md-12 text-center overlay-sib"> <a href="#" class="gold-text">Developers</a> </div>
+  </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/menu.js" charset="utf-8"></script>
+
+</body>
+
+</html>

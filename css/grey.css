@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+
+/*title*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0
+}
+
+
+a {
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+.fullscreen {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0!important;
+  padding: 4vh!important
+}
+
+#home {
+  background-image: url(../img/home.jpeg);
+  background-size: cover;
+  background-position: 60%;
+}
+
+.title {
+  font-family: 'Yesteryear', cursive;
+  font-size: 2.5rem;
+  color: #000
+}
+
+#about{
+  background-color: black;
+  color: white
+}
+
+#work{
+  margin-top: -32px;
+
+  width: 100%;
+  background-size: cover;
+  margin: 0!important;
+  padding-top: 4vh!important
+  
+}
+
+footer i {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}

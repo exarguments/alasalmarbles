@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raojee|galley</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style_new.css">
+<link rel="icon" href="img/logo.jpg">
+  <style media="screen">
+    body {
+      background-image: url(img/Living_01.jpg);
+    }
+
+    .overflow-hidden {
+      height: 100%;
+      overflow: hidden;
+      padding-top: 220px
+    }
+
+    .gallery-title {
+      padding-top: 120px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-title h1 {
+      font-size: 4em;
+      word-wrap: break-word;
+    }
+
+    .gallery-title:nth-child(1):hover body {
+      background-color: pink
+    }
+
+    .gallery-title:nth-child(2):hover body {
+      background-color: dodgerblue
+    }
+
+    .gallery-title:nth-child(3):hover body {
+      background-color: grey
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="brand"><h6 class="bold">RERA NO</h6><h6>P52100007018</h6>
+  </div>
+
+  <span id="menubtn" onclick=""><i class="material-icons">menu</i></span>
+  <div id="gridlines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div id="menu" class="col-md-3 col-sm-12 col-lg-4">
+
+  </div>
+
+  <div class="container-fluid overflow-hidden">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-3">
+        <h1 class="bold"> <a href="interior.html" class="gold-text">Apartments</a> </h1>
+        <h1 class="bold"> <a href="exterior.html" class="gold-text">Commercial spaces</a> </h1>
+        <h1 class="bold"> <a href="gardenunit.html" class="gold-text">Garden Apartments</a> </h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/menu.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('.gallery-title:nth-child(1)').hover(function() {
+        $('body').css('background-image', 'url("img/Mbed03.jpg")');
+      });
+      $('.gallery-title:nth-child(2)').hover(function() {
+        $('body').css('background-image', 'url("img/Perspective_01_New.jpg")');
+      });
+      $('.gallery-title:nth-child(3)').hover(function() {
+        $('body').css('background-image', 'url("img/Ter_GardernBird.jpg")');
+      });
+    });
+  </script>
+</body>
+
+</html>

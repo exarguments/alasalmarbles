@@ -1,0 +1,180 @@
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-height: auto;
+    top: 0;
+    left: 0;
+    /*background: #ffc107;*/
+    background: rgba(255, 214, 79, 1);
+    background: -moz-linear-gradient(45deg, rgba(255, 214, 79, 1) 0%, rgba(255, 179, 0, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255, 214, 79, 1)), color-stop(100%, rgba(255, 179, 0, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(255, 214, 79, 1) 0%, rgba(255, 179, 0, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255, 214, 79, 1) 0%, rgba(255, 179, 0, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255, 214, 79, 1) 0%, rgba(255, 179, 0, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 214, 79, 1) 0%, rgba(255, 179, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd64f', endColorstr='#ffb300', GradientType=1);
+    z-index: 99;
+}
+
+.menu{
+	z-index: 1000;
+	font-size: 3em;
+	font-weight: 100;
+	color: #0d47a1;
+	margin: 2vh
+}
+
+/* Overlay closing cross */
+
+.overlay .overlay-close {
+
+  width: 80px;
+  	height: 80px;
+  	position: absolute;
+  	right: 20px;
+  	top: 20px;
+  	overflow: hidden;
+  	border: none;
+  	background: url(../img/cross.png) no-repeat center center;
+  	text-indent: 200%;
+  	color: transparent;
+  	outline: none;
+  	z-index: 100;
+}
+
+/* Menu style */
+
+.overlay div {
+    text-align: center;
+    margin-left: 10vh;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    height: 5%;
+    height: calc(100% / 7);
+    min-height: 54px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.overlay ul li a {
+    font-size: 5rem;
+    font-weight: 600;
+    display: block;
+    color: #777;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.overlay ul li a:hover, .overlay ul li a:focus {
+    color: #000;
+}
+
+
+/* Effects */
+
+.overlay-boxes {
+    background: transparent;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.8s;
+    transition: visibility 0s 0.8s;
+}
+
+.overlay-boxes.open {
+    visibility: visible;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.overlay-boxes svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#path1,#path5,#path9,#path15,#path23{
+  fill:honeydew;
+  display: none;
+}
+#path2,#path6,#path10,#path13,#path16,#path19,#path22,#path24{
+  fill:pink;
+  display: none;
+}
+#path4,#path8,#path11,#path14,#path18,#path21,#path24,#path26{
+  fill:white;
+  display: none;
+}
+#path3,#path7,#path12,#path17,#path20,#path25{
+  fill:#ce93d8 ;
+  display: none;
+}
+/*
+.overlay-boxes svg path:nth-child(1),.overlay-boxes svg path:nth-child(8),.overlay-boxes svg path:nth-child(12),.overlay-boxes svg path:nth-child(16),.overlay-boxes svg path:nth-child(17),.overlay-boxes svg path:nth-child(21) {
+    fill:honeydew;
+    display: none;
+}
+
+.overlay-boxes svg path:nth-child(2),.overlay-boxes svg path:nth-child(6),.overlay-boxes svg path:nth-child(10),.overlay-boxes svg path:nth-child(14),.overlay-boxes svg path:nth-child(18),.overlay-boxes svg path:nth-child(22) {
+    fill:white;
+    display: none;
+}
+
+.overlay-boxes svg path:nth-child(3),.overlay-boxes svg path:nth-child(5),.overlay-boxes svg path:nth-child(11),.overlay-boxes svg path:nth-child(15),.overlay-boxes svg path:nth-child(19),.overlay-boxes svg path:nth-child(23) {
+    fill:#6d4c41 ;
+    display: none;
+}
+.overlay-boxes svg path:nth-child(4),.overlay-boxes svg path:nth-child(7),.overlay-boxes svg path:nth-child(9),.overlay-boxes svg path:nth-child(13),.overlay-boxes svg path:nth-child(20),.overlay-boxes svg path:nth-child(24) {
+    fill:pink;
+    display: none;
+}
+
+.overlay-boxes svg path:nth-child(28),.overlay-boxes svg path:nth-child(25),.overlay-boxes svg path:nth-child(26),.overlay-boxes svg path:nth-child(27){
+  fill:#ce93d8 ;
+    display: none;
+}
+*/
+
+.overlay-boxes div, .overlay-boxes .overlay-close {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s 0.8s;
+    transition: opacity 0.5s 0.8s;
+}
+
+.overlay-boxes.open div, .overlay-boxes.open .overlay-close {
+    opacity: 1;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.overlay-boxes.close div, .overlay-boxes.close .overlay-close {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@media screen and (max-height: 600px) {
+    .overlay {
+        overflow: scroll;
+    }
+    .overlay div {
+        font-size: 18px;
+        text-align: left;
+    }
+}

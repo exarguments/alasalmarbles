@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/materialize.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="js/materialize.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <img id="brand" src="img/logo.png" alt="">
+  <a id="menubtn" href="#"><i class="material-icons">menu</i></a>
+  <div id="landing">
+    <div id="bg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div id="about" class="row">
+
+    <div class="col m5 offset-m2">
+      <h1 class="title">Welcome</h1>
+      <p>Since inception, we have successfully completed a varied range of construction projects with a vision to conceive, design and build, in response to an existing set of conditions; a functional development aware of the artistic, social, political
+        and cultural context of site. Our focus has always been on the quality of projects we build and our aim is to exceed client expectations every time. The amount of repeat client and referrals we receive proves that our focus on quality works for
+        everyone. We strive relentlessly with an aim to achieve excellence in business that we venture into, with the objective of becoming an organization that all its employees, associates and clients are proud of. With a long way to go, we have many
+        more milestones to establish in cognizance with our vision.
+      </p>
+    </div>
+
+  </div>
+
+<div id="project" class="">
+
+</div>
+
+  <script type="text/javascript">
+    window.onload = () => {
+      let scrollPos,
+        landing = document.getElementById('landing'),
+        bg = document.getElementById('bg');
+      let scrollFunctions = {
+        "scrollPos": () => {
+          scrollPos = window.scrollY;
+        },
+        "parallax": () => {
+          let blur = Math.min(scrollPos / landing.clientHeight, 1) * 5;
+          let scale = (scrollPos / 3000) + 1;
+
+          bg.style.filter = 'blur(' + blur + 'px)';
+          bg.style.transform = 'scale(' + scale + ')';
+          bg.style.backgroundPosition = '0px ' + scrollPos / 2 + 'px';
+        }
+      }
+      window.addEventListener('scroll', (e) => {
+        window.requestAnimationFrame(scrollFunctions.scrollPos);
+        window.requestAnimationFrame(scrollFunctions.parallax);
+      });
+    }
+  </script>
+
+<script type="text/javascript">
+  $('#menubtn').click(function(){
+    $('#menubtn i').html('close')
+  })
+</script>
+</body>
+
+</html>
