@@ -1,26 +1,29 @@
 $(function() {
   $('#menu').prepend('<ul>' +
     '<li><a href="index.html">Home</a></li>' +
-    '<li><div class = "dropdown" >'+
-    '<div onclick = "myFunction()"class = "dropbtn"> About<i class="material-icons">more_vert</i> </div>'+
-    '<div id = "myDropdown" class = "dropdown-content">'+
-    '<a href = "about.html"> About Developers </a> '+
-    '<a href = "about_pal.html"> About Project </a>' +
-    '</div> </div></li>'+
-    '<li><div class = "dropdown" >'+
-    '<div onclick = "myFunction2()"class = "dropbtn">Flatlist<i class="material-icons">more_vert</i> </div>'+
-    '<div id = "myDropdown2" class = "dropdown-content">'+
-    '<a href = "apartments.html"> Apartments </a> '+
-    '<a href = "commercial.html"> Commercial </a>' +
-    '<a href = "garden_apartments.html"> Garden Apartments </a>' +
-    '</div> </div></li>'+
-    '<li><div class = "dropdown" >'+
-    '<div onclick = "myFunction3()"class = "dropbtn">Gallery<i class="material-icons">more_vert</i> </div>'+
-    '<div id = "myDropdown3" class = "dropdown-content">'+
-    '<a href = "interior.html"> Apartments </a> '+
-    '<a href = "exterior.html"> Commercial </a>' +
-    '<a href = "gardenunit.html"> Garden Apartments </a>' +
-    '</div> </div></li>'+
+    '<li><a href="index.html">About Us</a></li>' +
+    '<li><a href="index.html">Products</a></li>' +
+
+    // '<li><div class = "dropdown" >'+
+    // '<div onclick = "myFunction()"class = "dropbtn"> About<i class="material-icons">more_vert</i> </div>'+
+    // '<div id = "myDropdown" class = "dropdown-content">'+
+    // '<a href = "about.html"> About Developers </a> '+
+    // '<a href = "about_pal.html"> About Project </a>' +
+    // '</div> </div></li>'+
+    // '<li><div class = "dropdown" >'+
+    // '<div onclick = "myFunction2()"class = "dropbtn">Flatlist<i class="material-icons">more_vert</i> </div>'+
+    // '<div id = "myDropdown2" class = "dropdown-content">'+
+    // '<a href = "apartments.html"> Apartments </a> '+
+    // '<a href = "commercial.html"> Commercial </a>' +
+    // '<a href = "garden_apartments.html"> Garden Apartments </a>' +
+    // '</div> </div></li>'+
+    // '<li><div class = "dropdown" >'+
+    // '<div onclick = "myFunction3()"class = "dropbtn">Gallery<i class="material-icons">more_vert</i> </div>'+
+    // '<div id = "myDropdown3" class = "dropdown-content">'+
+    // '<a href = "interior.html"> Apartments </a> '+
+    // '<a href = "exterior.html"> Commercial </a>' +
+    // '<a href = "gardenunit.html"> Garden Apartments </a>' +
+    // '</div> </div></li>'+
     '<li><a href="contact.html">Contact</a></li>' +
     '</ul>'
   );
