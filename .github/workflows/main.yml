@@ -1,0 +1,16 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+    - main
+jobs:
+  main:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+    - run: npm install -g firebase-tools
+    - run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
