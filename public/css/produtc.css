@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Tinos');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Tinos');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /*background-image: url(https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-size: cover;*/
+}
+
+h1, h2, h4 {
+  font-family: 'Tinos', sans-serif;
+  color: black
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.header {
+  margin: 5% auto;
+}
+
+.header h1 {
+  font-size: 5rem!important;
+  font-weight: 900;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 46px -9px rgba(23, 23, 23, 1);
+  -moz-box-shadow: 0px 0px 46px -9px rgba(23, 23, 23, 1);
+  box-shadow: 0px 0px 46px -9px rgba(23, 23, 23, 1);
+}
+
+
+/*********** Menu bar**************/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.change {
+  width: 25%;
+}
+
+.overlay1 {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+.overlay2 {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+.overlay3 {
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+.overlay4 {
+  right: 25%;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+#overlaymenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+  color: #fff;
+}
+
+.overlay-content {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #fff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 60px;
+  z-index: 100
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  z-index: 99;
+  right: 0;
+  position: fixed;
+  top: 5px
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.bar2 {
+  width: 25px;
+  margin: auto;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-65deg) translate(-12px, 5px);
+  transform: rotate(-65deg) translate(-12px, 5px);
+  background-color: #fff
+}
+
+.change .bar2 {
+  opacity: 1;
+  /*height: 2px;*/
+  width: 35px;
+  top: 8px;
+  left: 0px;
+  position: relative;
+  background-color: #fff
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(62deg) translate(4px, -16px);
+  transform: rotate(62deg) translate(4px, -16px);
+  background-color: #fff
+}
+
+.c--anim-btn span {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.c--anim-btn, .c-anim-btn {
+  transition: 0.3s;
+}
+
+.c--anim-btn {
+  height: 55px;
+  overflow: hidden;
+  width: auto;
+  font-family: 'Tinos', sans-serif;
+}
+
+.c-anim-btn {
+  margin-top: 0em;
+}
+
+.c--anim-btn:hover .c-anim-btn {
+  margin-top: -1.29em;
+}
+
+
+/*************************/
+
+.logo {
+  margin: 10px
+}
+
+.fullscreen {
+  height: auto;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.ticker-headline {
+  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+  /*white-space: nowrap;*/
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  font-size: 10vh;
+  font-weight: 600!important;
+  color: black
+}
+
+.carousel.vertical .carousel-inner {
+  height: 100%;
+  width: auto;
+}
+
+.carousel.vertical .carousel-inner>.item {
+  width: auto;
+  -webkit-transition: 0.6s ease-in-out top;
+  transition: 0.6s ease-in-out top;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel.vertical .carousel-inner>.item {
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+  .carousel.vertical .carousel-inner>.item.next, .carousel.vertical .carousel-inner>.item.active.right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner>.item.prev, .carousel.vertical .carousel-inner>.item.active.left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner>.item.next.left, .carousel.vertical .carousel-inner>.item.prev.right, .carousel.vertical .carousel-inner>.item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    top: 0;
+  }
+}
+
+.carousel.vertical .carousel-inner>.active, .carousel.vertical .carousel-inner>.next, .carousel.vertical .carousel-inner>.prev {
+  display: block;
+}
+
+.carousel.vertical .carousel-inner>.active {
+  top: 0;
+}
+
+.carousel.vertical .carousel-inner>.next, .carousel.vertical .carousel-inner>.prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#vertcar {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 30%;
+}
+
+
+/***********/
+
+#about {
+  padding: 5%;
+}
+
+#about p {
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 2% 2% 15% 2%
+}
+
+
+/********/
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-container, .front, .back {
+  width: 100%;
+  height: 300px;
+}
+
+.flipper {
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back, .flip-container.hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  color: white
+}
+
+.front1 {
+  background: url(https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front2 {
+  background: url(https://tse3.mm.bing.net/th?id=OIP.YWJ_9ZsPlzyQI2gHDZ3q6QHaFQ&pid=Api&P=0&w=940&h=650) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front3 {
+  background: url(https://images.pexels.com/photos/160146/pexels-photo-160146.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front4 {
+  background: url(https://images.pexels.com/photos/4776/man-sunglasses-art-graffiti.jpg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front5 {
+  background: url(https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front6 {
+  background: url(https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front7 {
+  background: url(https://images.pexels.com/photos/160146/pexels-photo-160146.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+.front8 {
+  background: url(https://images.pexels.com/photos/4776/man-sunglasses-art-graffiti.jpg?w=940&h=650&auto=compress&cs=tinysrgb) 0 0 no-repeat;
+  z-index: 2;
+}
+
+
+/************** projects **********************/
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+#projects .row {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+}
+
+#projects .item {
+  display: inline-block;
+  padding: .25rem;
+  width: 100%;
+}
+
+
+/**********          client                 ***********/
+
+
+/*
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: 500ms ease-in-out left;
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none!important;
+}
+.multi-item-carousel a{
+  background-image: none!important
+}*/
+
+footer {
+  height: auto;
+  margin: 10% auto 5%;
+}
+
+footer .logo {
+  margin: 0 auto;
+}
+
+footer .fa, .fa {
+  margin: 3% 1%
+}
+
+footer ul li a {
+  color: black;
+  font-size: 1.6rem;
+  font-family: 'roboto';
+  margin: 30px auto;
+  text-transform: uppercase;
+  text-decoration: none!important;
+}
+
+footer h4 {
+  font-weight: 900;
+}
