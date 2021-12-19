@@ -3,321 +3,117 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Alasal|Product description</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- html5 version of http-equiv="Content-Type"... -->
-  <meta name="description" content="{{description}}">
-  <meta name="keywords" content="{{keywords}}">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-
-  <link rel="author" href="https://plus.google.com/{{googlePlusId}}" />
-  <link rel="canonical" href="{{pageUrl}}" />
-  <link rel="icon" href="img/logo.jpg">
-
+  <title>Alasalmarbles</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <link rel="stylesheet" href="style_new.css">
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="css/produtc.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
-
+  <link rel="stylesheet" href="./css/style_product_details.css">
+  <link rel="icon" href="img/logo.jpg">
   <style media="screen">
+    #google-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-color: #e7eaf0;
+      left: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important
+    }
+
   </style>
 </head>
 
+<!-- <body style="background-color: lightgray;"> -->
 <body>
-  
-  <div class="row" style="margin:0 0 5% 0">
-    <div id="amalsuttitle" class="container col-md-3 col-md-offset-5 col-xs-8 col-xs-offset-2">
-      
-      <div class="col-md-3 col-xs-4 ">
-        <h1 style="font-size:80px" style="font-weight:900;text-align: right;">M|</h1>
-      </div>
-      <div class="col-md-5 col-xs-2" style="padding-top:7%;">
-        <h2 style="line-height:20px;font-weight:700">Marble</h2></br>
-        <span id="menubtn" onclick="" style="position: absolute;top: 0;right: 0;"><i class="material-icons">menu</i></span>  
-        <div id="menu" class="col-md-3 col-sm-12 col-lg-4 shadow"></div>    
-      </div>
-    </div>
-  </div>
-  
-  <div id="gridlines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+
+  <span id="menubtn" onclick=""><i class="material-icons">menu</i></span>
+  <span id="logo" onclick=""><img src="img/rlogo.jpg" alt="" class="img-responsive"></span>
+
+  <div id="menu" class="col-md-3 col-sm-12 col-lg-4 shadow">
   </div>
 
+  <div id="gridlines" >
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+    <div class="line" style="background-color: darkgrey"></div>
+  </div>
+  <div class="container text-center"><h2>P | Product</h2></div>
+  <div class="hero">
     <div class="row">
-    <div class="swiper-container main-slider loading">
-    <div class="swiper-wrapper">
+        <div class="col">
+            <div class="slider">
+                <div class="product">
 
-      
-        <div class="swiper-slide aprt">
-          <figure class="slide-bgimg" style="background-image:url('img/Living_01.jpg')">
-            <img src="img/Living_01.jpg" class="entity-img" style="padding-bottom: 10%;" />
-            
-          </figure>
-          </div>
-          
-        <div class="swiper-slide aprt">
-          <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/BLACK-GOLD.jpg')">
-            <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/BLACK-GOLD.jpg" class="entity-img" />
-          </figure>
-        </div>
-  
-        <div class="swiper-slide gaprt">
-          <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg')">
-            <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg" class="entity-img" />
-          </figure>
-        </div>
-  
-        <div class="swiper-slide comm">
-          <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/OLIVE-PEARL--300x300.jpg')">
-            <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/OLIVE-PEARL--300x300.jpg" class="entity-img" />
-          </figure>
-        </div>
-  
-        <div class="swiper-slide aprt">
-          <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/1-2-300x300.png')">
-            <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/1-2-300x300.png" class="entity-img" />
-          </figure>
-        </div>
-      
-         
+                    <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg" width="300" height="300" alt="" onclick="clickme(this)">
+                    <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/BLACK-GOLD.jpg" alt="" onclick="clickme(this)" width="300" height="300">
+                    <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg" alt="" onclick="clickme(this)" width="300" height="300">
+                    <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/OLIVE-PEARL--300x300.jpg" alt="" onclick="clickme(this)" width="300" height="300">
 
+                </div>
+                <div class="preview">
+                    <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg" id="imagebox" alt="" width="450" height="300">
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+
+            <div class="content">
+                <p class="price">Black & Gold </p>
+
+                <p>Type material : Marble</br>
+                    Country : Pakistan</br>
+                    Prevailing market : Worldwide</br>
+                    Compressive strenght : 1988/kg cm²</br>
+                    Ultimate tensile strenght : 122/kg cm²</br>
+                    Coef.thermal expansion : 0.0041mm/m°C</br>
+                    Water absorption : 0.13%</br>
+                    Impact test/min. fall height : 27.00 cm</br>
+                    Bulk density : 2689 kg/m³</p>
+                
+                <p>Color: <select name="size">
+                        <option value="select size">select color</option>
+                        <option value="small">black</option>
+                        <option value="medium">white</option>
+                        <option value="large">brown</option>
+                    </select></p>
+                
+            </div>
+
+        </div>
     </div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev swiper-button-white"></div>
-    <div class="swiper-button-next swiper-button-white"></div>
-
-    
-  </div>
-
-  <!-- Thumbnail navigation -->
-  <div class="swiper-container nav-slider loading">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide aprt">
-        <figure class="slide-bgimg" style="background-image:url('img/Living_01.jpg')">
-          <img src="img/Living_01.jpg" class="entity-img" />
-        </figure>
-      </div>
-      <div class="swiper-slide gaprt">
-        <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/BLACK-GOLD.jpg')">
-          <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/BLACK-GOLD.jpg" class="entity-img" />
-        </figure>
-      </div>
-      <div class="swiper-slide comm">
-        <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg')">
-          <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/dragon-beige-marble-iran-300x300.jpg" class="entity-img" />
-        </figure>
-      </div>
-      <div class="swiper-slide aprt">
-        <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/OLIVE-PEARL--300x300.jpg')">
-          <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/OLIVE-PEARL--300x300.jpg" class="entity-img" />
-        </figure>
-      </div>
-      <div class="swiper-slide gaprt">
-        <figure class="slide-bgimg" style="background-image:url('https://www.alasalmarbles.com/wp-content/uploads/2020/01/1-2-300x300.png')">
-          <img src="https://www.alasalmarbles.com/wp-content/uploads/2020/01/1-2-300x300.png" class="entity-img" />
-        </figure>
-      </div>
-    </div>
-  </div>
-
-</div> 
-<!-- row -->
-
-<div class="row">
-
-  <div class="content">
-      <p class="price">Black & Gold </p>
-
-      <p>Type material : Marble</br>
-          Country : Pakistan</br>
-          Prevailing market : Worldwide</br>
-          Compressive strenght : 1988/kg cm²</br>
-          Ultimate tensile strenght : 122/kg cm²</br>
-          Coef.thermal expansion : 0.0041mm/m°C</br>
-          Water absorption : 0.13%</br>
-          Impact test/min. fall height : 27.00 cm</br>
-          Bulk density : 2689 kg/m³</p>
-      
-      <p>Color: <select name="size">
-              <option value="select size">select color</option>
-              <option value="small">black</option>
-              <option value="medium">white</option>
-              <option value="large">brown</option>
-          </select></p>
-      
-  </div>
 
 </div>
 
+
+</br>
+
+<div w3-include-html="footer.html"></div> 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/menu.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="./js/menu.js" charset="utf-8"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
-  <script type="text/javascript">
-    // Params
-    var mainSliderSelector = '.main-slider',
-      navSliderSelector = '.nav-slider',
-      interleaveOffset = 0.5;
+  <script>
+    function clickme(smallImg) {
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+    }
+</script>
 
-    // Main Slider
-    var mainSliderOptions = {
-      loop: true,
-      speed: 1000,
-      autoplay: {
-        delay: 3000
-      },
-      loopAdditionalSlides: 10,
-      grabCursor: true,
-      watchSlidesProgress: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        init: function() {
-          this.autoplay.stop();
-        },
-        imagesReady: function() {
-          this.el.classList.remove('loading');
-          this.autoplay.start();
-        },
-        // slideChangeTransitionEnd: function() {
-        //   var swiper = this,
-        //     captions = swiper.el.querySelectorAll('.caption');
-        //   for (var i = 0; i < captions.length; ++i) {
-        //     captions[i].classList.remove('show');
-        //   }
-        //   swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
-        // },
-        progress: function() {
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
-            var slideProgress = swiper.slides[i].progress,
-              innerOffset = swiper.width * interleaveOffset,
-              innerTranslate = slideProgress * innerOffset;
-            swiper.slides[i].querySelector(".slide-bgimg").style.transform =
-              "translate3d(" + innerTranslate + "px, 0, 0)";
-          }
-        },
-        touchStart: function() {
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].style.transition = "";
-          }
-        },
-        setTransition: function(speed) {
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].style.transition = speed + "ms";
-            swiper.slides[i].querySelector(".slide-bgimg").style.transition =
-              speed + "ms";
-          }
-        }
-      }
-    };
-    var mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 
-    // Navigation Slider
-    var navSliderOptions = {
-      loop: true,
-      loopAdditionalSlides: 10,
-      speed: 1000,
-      spaceBetween: 5,
-      slidesPerView: 5,
-      centeredSlides: true,
-      touchRatio: 0.2,
-      slideToClickedSlide: true,
-      direction: 'vertical',
-      on: {
-        imagesReady: function() {
-          this.el.classList.remove('loading');
-          mainSlider.autoplay.stop();
-        },
-        click: function() {
-          mainSlider.autoplay.stop();
-        }
-      }
-    };
-    var navSlider = new Swiper(navSliderSelector, navSliderOptions);
-
-    // Matching sliders
-    mainSlider.controller.control = navSlider;
-    navSlider.controller.control = mainSlider;
-  </script>
-
-  <script type="text/javascript">
-    // $(document).load(function() {
-    //   // $('.comm').show();
-    //   // $('.aprt').show();
-    //   // $('.gaprt').show();
-    //   $('.showTyp').click() {
-    //     alert('clicked');
-    //     if (galClass === 'all') {
-    //       $('.comm').show();
-    //       $('.aprt').show();
-    //       $('.gaprt').show();
-    //     } else if (galClass === 'aprt') {
-    //       $('.aprt').show();
-    //       $('.gaprt').hide();
-    //       $('.comm').hide();
-    //     } else if (galClass === 'gaprt') {
-    //       $('.gaprt').show();
-    //       $('.aprt').hide();
-    //       $('.comm').hide();
-    //     } else if (galClass === 'comm') {
-    //       $('.comm').show();
-    //       $('.aprt').hide();
-    //       $('.gaprt').hide();
-    //     }
-    //
-    //
-    //   }
-    // })
-    // }
-    // function showTyp(a) {
-    //   alert(a);
-    // }
-
-    $(document).ready(function() {
-      $(".filter").click(function() {
-        var a = $(this).attr('name');
-
-        if (a === 'aprt') {
-          alert(a);
-          $('.aprt').show();
-          $('.gaprt').hide();
-          $('.comm').hide();
-        } else if (a === 'gaprt') {
-          alert(a);
-          $('.aprt').hide();
-          $('.gaprt').show();
-          $('.comm').hide();
-        } else if (a === 'comm') {
-          alert(a);
-          $('.aprt').hide();
-          $('.gaprt').hide();
-          $('.comm').show();
-        } else {
-          alert(a);
-          $('.aprt').show();
-          $('.gaprt').show();
-          $('.comm').show();
-        }
-      });
-    });
-  </script>
+  <script src="./js/includehtml.js"></script>
+  <script>includeHTML();</script>   
 </body>
 
 </html>

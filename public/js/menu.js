@@ -1,7 +1,7 @@
 $(function() {
   $('#menu').prepend('<ul>' +
     '<li><a href="index.html">Home</a></li>' +
-    '<li><a href="index.html">About Us</a></li>' +
+    '<li><a href="about.html">About Us</a></li>' +
     // '<li><div class = "dropdown" >'+
     // '<div onclick = "myFunction()"class = "dropbtn"> About<i class="material-icons">more_vert</i> </div>'+
     // '<div id = "myDropdown" class = "dropdown-content">'+
@@ -23,7 +23,7 @@ $(function() {
     // '<a href = "gardenunit.html"> Garden Apartments </a>' +
     // '</div> </div></li>'+
     '<li><a href="contact.html">Contact</a></li>' +
-    '<li><a href="products_new.html">Products</a></li>' +
+    '<li><a href="./products_list.html">Products</a></li>' +
 
     '</ul>'
   );
